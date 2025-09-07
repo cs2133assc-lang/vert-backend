@@ -10,6 +10,9 @@ if not os.path.exists(FILE_PATH):
     with open(FILE_PATH, "w") as f:
         json.dump([], f)
 
+@app.route("/api/page", methods=["GET"])
+def homePage():
+    return "Home Page"
 @app.route("/api/submit", methods=["POST"])
 def submit():
     data = request.json
