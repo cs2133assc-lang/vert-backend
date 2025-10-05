@@ -35,6 +35,5 @@ def submit():
 
     return jsonify({"message": "User details saved!", "users": users}), 201
 
-
 if __name__ == "__main__":
     app.run(debug=True, port=6001, host='0.0.0.0')
